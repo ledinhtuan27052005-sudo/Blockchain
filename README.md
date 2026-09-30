@@ -92,24 +92,39 @@ Blockchain/
 
 ## 5. Hướng dẫn Khởi chạy Hệ thống
 
-### Cách 1: Khởi động toàn bộ hệ thống bằng 1 lệnh duy nhất
+### Bước 1: Cài đặt thư viện dependencies (Tạo thư mục node_modules)
+Sau khi clone dự án về máy tính, chạy 2 lệnh sau để cài đặt toàn bộ thư viện:
+```bash
+# 1. Cài đặt thư viện cho Backend và Scripts gốc
+npm install
+
+# 2. Cài đặt thư viện cho Giao diện Frontend Client
+cd client && npm install && cd ..
+```
+
+---
+
+### Bước 2: Khởi động hệ thống
+#### Cách 1: Khởi động toàn bộ bằng 1 lệnh duy nhất (Khuyên dùng)
 ```bash
 npm run dev
 ```
 *(Chạy đồng thời Backend API tại `http://localhost:5000` và Web Client tại `http://localhost:3000`)*
 
-### Cách 2: Khởi động thủ công riêng biệt từng dịch vụ
-- **Terminal 1 (Backend Server)**:
+#### Cách 2: Khởi động thủ công riêng biệt từng dịch vụ
+- **Terminal 1 (Blockchain RPC Ganache)**:
+  ```bash
+  npx ganache --wallet.mnemonic "test test test test test test test test test test test junk" --port 8545 --chain.chainId 1337
+  ```
+- **Terminal 2 (Triển khai Smart Contract)**:
+  ```bash
+  npm run deploy
+  ```
+- **Terminal 3 (Backend Server)**:
   ```bash
   npm run server
   ```
-- **Terminal 2 (Web Client Frontend)**:
+- **Terminal 4 (Web Client Frontend)**:
   ```bash
   npm run client
-  # hoặc: cd client && npm run dev
   ```
-
-### Biên dịch Smart Contract (khi chỉnh sửa contract):
-```bash
-npm run compile
-```
