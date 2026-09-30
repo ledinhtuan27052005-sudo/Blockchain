@@ -1,0 +1,54 @@
+[
+  {
+    "id": "USR-1790793329774",
+    "username": "khachhang",
+    "email": "ledinhtuan27052005@gmail.com",
+    "passwordHash": "1fda7f8a569a80d46a056a1e8909edc245ba8364687b66ec32d6ee4dc406481c",
+    "fullName": "Khách Hàng",
+    "phone": "0367833013",
+    "role": "CUSTOMER",
+    "walletAddress": "0x35145A2300DD043Ec7EF244Ec6D524f3cA2b2347",
+    "walletType": "EMBEDDED_MPC",
+    "isEmbedded": true,
+    "createdAt": "2026-09-30T18:35:29.774Z"
+  },
+  {
+    "id": "USR-1790793471390",
+    "username": "nhasanxuat",
+    "email": "42tuana2k46@gmail.com",
+    "passwordHash": "1fda7f8a569a80d46a056a1e8909edc245ba8364687b66ec32d6ee4dc406481c",
+    "fullName": "Nhà Sản Xuất",
+    "phone": "0987654321",
+    "role": "MANUFACTURER",
+    "walletAddress": "0x3af678715385857c9a617b71726da968b1ef6e37",
+    "walletType": "STANDARD",
+    "isEmbedded": false,
+    "createdAt": "2026-09-30T18:37:51.390Z"
+  },
+  {
+    "id": "USR-1790793570368",
+    "username": "daily12",
+    "email": "dinhhchi2110@gmail.com",
+    "passwordHash": "1fda7f8a569a80d46a056a1e8909edc245ba8364687b66ec32d6ee4dc406481c",
+    "fullName": "Đại lý",
+    "phone": "0393950301",
+    "role": "SELLER",
+    "walletAddress": "0x8b7374479ff2d4a1fd285de58ab812ffd67cc7fd",
+    "walletType": "STANDARD",
+    "isEmbedded": false,
+    "createdAt": "2026-09-30T18:39:30.368Z"
+  },
+  {
+    "id": "USR-1790793704394",
+    "username": "tramdichvu",
+    "email": "dinhchi21102005@gmail.com",
+    "passwordHash": "1fda7f8a569a80d46a056a1e8909edc245ba8364687b66ec32d6ee4dc406481c",
+    "fullName": "Trạm dịch vụ",
+    "phone": "0987654312",
+    "role": "SERVICE_CENTER",
+    "walletAddress": "0x623f4d93aa3446a84c1124db9c4a1add432be246",
+    "walletType": "STANDARD",
+    "isEmbedded": false,
+    "createdAt": "2026-09-30T18:41:44.395Z"
+  }
+]

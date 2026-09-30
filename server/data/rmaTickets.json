@@ -1,0 +1,17 @@
+[
+  {
+    "id": "RMA-20260930-1734",
+    "serialNumber": "SN-MACBOOK-M3-998",
+    "customerName": "Lê Đình Tuấn",
+    "customerPhone": "0367833013",
+    "customerEmail": "ledinhtuan27052005@gmail.com",
+    "defectDescription": "Màn hình lỗi",
+    "preferredCenter": "Trung Tâm Dịch Vụ Ủy Quyền Hà Nội",
+    "status": "COMPLETED",
+    "createdAt": "2026-09-30T19:03:43.796Z",
+    "updatedAt": "2026-09-30T19:04:53.293Z",
+    "technicianId": "TECH-TUAN-004",
+    "technicianNotes": "[Phiếu RMA-20260930-1734] Màn hình lỗi",
+    "replacedPart": "Màn hình chính hãng"
+  }
+]

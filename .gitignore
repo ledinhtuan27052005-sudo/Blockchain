@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+client/node_modules/
+
+# Production build
+dist/
+client/dist/
+
+# Hardhat & Solidity
+cache/
+artifacts/
+
+# Environment variables & Private secrets (DO NOT COMMIT)
+.env
+.env.local
+*.env
+
+# Documentation & Report Generator Files (DO NOT COMMIT)
+*.docx
+*.py
+test_*
+screenshot_test.png
+test_bw.png
+test_diag.png
+Ảnh sơ bộ/
+scripts/build_full_report.py
+scripts/generate_bw_diagrams.py
+scripts/generate_diagrams.py
+scripts/generate_english_diagrams.py
+scripts/generate_table_guide.cjs
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.agents/
+GEMINI.md
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

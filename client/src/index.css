@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-page: #f8fafc;
+    --text-page: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    --glass-border: #e2e8f0;
+  }
+
+  .dark {
+    --bg-page: #0b0f19;
+    --text-page: #f1f5f9;
+    --glass-bg: rgba(17, 24, 39, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.08);
+  }
+
+  html, body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-page);
+    transition: background-color 0.25s ease, color 0.25s ease;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+/* Custom modern glow & glass effects */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.glass-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+}
+
+.glow-blue {
+  box-shadow: 0 0 20px -3px rgba(59, 130, 246, 0.25);
+}
+
+.glow-green {
+  box-shadow: 0 0 20px -3px rgba(34, 197, 94, 0.25);
+}
+
+/* Progress bar animation for in-app notification box */
+@keyframes shrink-width {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+.animate-shrink-width {
+  animation: shrink-width 5s linear forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Gentle bell ringing / swinging animation when unread notifications exist */
+@keyframes bell-ring {
+  0% { transform: rotate(0); }
+  3% { transform: rotate(14deg); }
+  6% { transform: rotate(-12deg); }
+  9% { transform: rotate(10deg); }
+  12% { transform: rotate(-8deg); }
+  15% { transform: rotate(6deg); }
+  18% { transform: rotate(-4deg); }
+  21% { transform: rotate(2deg); }
+  24% { transform: rotate(0); }
+  100% { transform: rotate(0); }
+}
+
+.animate-bell-ring {
+  transform-origin: top center;
+  display: inline-block;
+  animation: bell-ring 2.8s ease-in-out infinite;
+}

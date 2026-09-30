@@ -1,0 +1,34 @@
+[
+  {
+    "serialNumber": "SN-MACBOOK-M3-998",
+    "modelCode": "MBP-M3-MAX",
+    "name": "MacBook Pro 16 inch M3 Max",
+    "brand": "Apple",
+    "category": "Laptop",
+    "imageUrl": "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=800&q=80",
+    "manufactureDate": "2026-09-30",
+    "standardWarrantyMonths": 24,
+    "specs": {
+      "processor": "Tiêu chuẩn nhà sản xuất",
+      "ram": "8GB Unified",
+      "storage": "256GB SSD",
+      "display": "FHD 1080p"
+    },
+    "documentation": {
+      "manualUrl": "#",
+      "safetyGuide": "#",
+      "serviceCoverage": "Chinh hang toan quoc"
+    },
+    "defaultStatus": "Inactive",
+    "secretPin": "PIN-977318",
+    "pinHash": "31c17a5f16a2f0c4eec93a9f6fdf35b2b5580a8fb1c2ebeafe12b2f5906ad65d",
+    "pinUsed": false,
+    "currentOwner": "0x8b7374479Ff2d4A1fD285dE58Ab812fFD67cc7Fd",
+    "ownerAddress": "0x8b7374479Ff2d4A1fD285dE58Ab812fFD67cc7Fd",
+    "buyerPhone": "0393950301",
+    "buyerEmail": "dinhhchi2110@gmail.com",
+    "buyerName": "Đại lý",
+    "lastTransferredAt": "2026-09-30T19:06:16.778Z",
+    "lastTransferTxHash": "0xe85c32e6d930f0808e07dc1ddd040c5db4d19d84dc18695cd2ca965456520d69"
+  }
+]

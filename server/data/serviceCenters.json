@@ -1,0 +1,16 @@
+[
+  {
+    "id": "CTR-HN-01",
+    "name": "Trung Tâm Dịch Vụ Ủy Quyền Hà Nội",
+    "address": "Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội",
+    "phone": "02438682222",
+    "email": "service-hn@trustwarranty.io"
+  },
+  {
+    "id": "CTR-HCM-01",
+    "name": "Trung Tâm Dịch Vụ Ủy Quyền TP.HCM",
+    "address": "Số 268 Lý Thường Kiệt, Quận 10, TP.HCM",
+    "phone": "02838647256",
+    "email": "service-hcm@trustwarranty.io"
+  }
+]
